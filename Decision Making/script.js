@@ -62,3 +62,12 @@ const mystery = 'Password7';
 if(mystery[0] === 'P' && mystery.length > 5 && mystery.indexOf('7') !== -1){
     console.log("YOU GOT IT!!!");
 }
+
+// OR Operator
+const age = 25;
+
+if(age >= 18 || age <= 65){
+    console.log("You are an adult");
+}else{
+    console.log("You are not an adult");
+}
