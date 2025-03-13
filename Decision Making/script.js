@@ -19,14 +19,39 @@ if(age >= 18){
 }
 
 // Nested Conditionals
-const password = prompt("Enter your password");
+// const password = prompt("Enter your password");
 
-if(password.length >= 8){
-    if(password.indexOf(" ") === -1){
-        console.log("Password is strong");
-    }else{
-        console.log("Password cannot contain spaces");
-    }
+// if(password.length >= 8){
+//     if(password.indexOf(" ") === -1){
+//         console.log("Password is strong");
+//     }else{
+//         console.log("Password cannot contain spaces");
+//     }
+// }else{
+//     console.log("Password is too short");
+// }
+
+// Falsey Values
+if(0){
+    console.log("Zero is truthy");
 }else{
-    console.log("Password is too short");
+    console.log("Zero is falsey");
+}
+
+if(null){
+    console.log("Null is truthy");
+}else{
+    console.log("Null is falsey");
+}
+
+if(undefined){
+    console.log("Undefined is truthy");
+}else{
+    console.log("Undefined is falsey");
+}
+
+if(NaN){    
+    console.log("NaN is truthy");    
+}else{
+    console.log("NaN is falsey");
 }
