@@ -56,7 +56,7 @@
 //     console.log("NaN is falsey");
 // }
 
-// Logical Operators
+// Logical Operators => AND, OR, NOT
 const mystery = 'Password7'; 
 
 if(mystery[0] === 'P' && mystery.length > 5 && mystery.indexOf('7') !== -1){
@@ -70,4 +70,11 @@ if(age >= 18 || age <= 65){
     console.log("You are an adult");
 }else{
     console.log("You are not an adult");
+}
+
+// NOT Operator
+if(!false){
+    console.log("True");
+}else{
+    console.log("False");
 }
