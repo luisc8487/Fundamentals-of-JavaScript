@@ -19,7 +19,7 @@ This guide will help you understand decision-making in JavaScript. Decision-maki
 Boolean logic is the foundation of decision-making in JavaScript. It deals with values that are either `true` or `false`. These values are used to control the flow of your code.
 
 #### Example:
-```js
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
