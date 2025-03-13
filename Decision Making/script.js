@@ -1,22 +1,22 @@
 // Single Coniditional
-const variable = true;
+// const variable = true;
 
-if (!variable) {
-  console.log("This variable is true");
-}else{
-    console.log("This variable is false");
-}
+// if (!variable) {
+//   console.log("This variable is true");
+// }else{
+//     console.log("This variable is false");
+// }
 
 // Multiple Conditionals
-const age = 18;
+// const age = 18;
 
-if(age >= 18){
-    console.log("You are an adult");
-}else if(age >= 13){
-    console.log("You are a teenager");
-}else{
-    console.log("You are a child");
-}
+// if(age >= 18){
+//     console.log("You are an adult");
+// }else if(age >= 13){
+//     console.log("You are a teenager");
+// }else{
+//     console.log("You are a child");
+// }
 
 // Nested Conditionals
 // const password = prompt("Enter your password");
@@ -32,26 +32,33 @@ if(age >= 18){
 // }
 
 // Falsey Values
-if(0){
-    console.log("Zero is truthy");
-}else{
-    console.log("Zero is falsey");
-}
+// if(0){
+//     console.log("Zero is truthy");
+// }else{
+//     console.log("Zero is falsey");
+// }
 
-if(null){
-    console.log("Null is truthy");
-}else{
-    console.log("Null is falsey");
-}
+// if(null){
+//     console.log("Null is truthy");
+// }else{
+//     console.log("Null is falsey");
+// }
 
-if(undefined){
-    console.log("Undefined is truthy");
-}else{
-    console.log("Undefined is falsey");
-}
+// if(undefined){
+//     console.log("Undefined is truthy");
+// }else{
+//     console.log("Undefined is falsey");
+// }
 
-if(NaN){    
-    console.log("NaN is truthy");    
-}else{
-    console.log("NaN is falsey");
+// if(NaN){    
+//     console.log("NaN is truthy");    
+// }else{
+//     console.log("NaN is falsey");
+// }
+
+// Logical Operators
+const mystery = 'Password7'; 
+
+if(mystery[0] === 'P' && mystery.length > 5 && mystery.indexOf('7') !== -1){
+    console.log("YOU GOT IT!!!");
 }
