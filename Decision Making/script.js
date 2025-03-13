@@ -1,5 +1,4 @@
 // Single Coniditional
-
 const variable = true;
 
 if (!variable) {
@@ -17,4 +16,17 @@ if(age >= 18){
     console.log("You are a teenager");
 }else{
     console.log("You are a child");
+}
+
+// Nested Conditionals
+const password = prompt("Enter your password");
+
+if(password.length >= 8){
+    if(password.indexOf(" ") === -1){
+        console.log("Password is strong");
+    }else{
+        console.log("Password cannot contain spaces");
+    }
+}else{
+    console.log("Password is too short");
 }
