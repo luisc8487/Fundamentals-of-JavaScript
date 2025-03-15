@@ -74,3 +74,27 @@ console.log(arr1 === arr2);
 ```
 
 Even though both arrays have the same content, they are stored in different locations in memory, and the comparison checks the reference, not the content.
+
+## Modifying Arrays with Built-in Methods
+JavaScript provides several methods to manipulate arrays: 
+- `push()`: Adds an element to the end of the array.
+- `pop()`: Removes the last element.
+- `unshift()`: Adds an element to the beginning.
+- `shift()`: Removes the first element.
+- `splice()`: Adds or removes elements at a specified index.
+- `reverse()`: Reverses the order of the array.
+- `concat()`: Combines two or more arrays.
+- `split()`: Converts a string to an array.
+
+### Example:
+```js
+let numbers = [1, 2, 3, 4];
+numbers.push(5); // [1, 2, 3, 4, 5]
+numbers.pop(); // [1, 2, 3, 4]
+numbers.unshift(0); // [0, 1, 2, 3, 4]
+numbers.shift(); // [1, 2, 3, 4]
+
+let newNumbers = numbers.concat([5, 6]); // [1, 2, 3, 4, 5, 6]
+let reversed = newNumbers.reverse(); // [6, 5, 4, 3, 2, 1]
+```
+
