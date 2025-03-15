@@ -98,3 +98,18 @@ let newNumbers = numbers.concat([5, 6]); // [1, 2, 3, 4, 5, 6]
 let reversed = newNumbers.reverse(); // [6, 5, 4, 3, 2, 1]
 ```
 
+## Comparing Arrays
+Since arrays are reference types, comparing two arrays directly will return false unless they reference the same object in memory.
+```js
+let a = [1, 2, 3];
+let b = a;
+
+console.log(a === b); // true
+
+let c = [1, 2, 3];
+
+console.log(a === c); // false
+```
+
+## Conclusion
+Understanding JavaScript arrays is essential for effective data management. By leveraging built-in methods and recognizing how arrays are stored in memory, you can efficiently manipulate and manage data in your applications.
