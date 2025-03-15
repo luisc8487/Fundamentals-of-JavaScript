@@ -1,7 +1,7 @@
 # Fundamentals-of-JavaScript
 
 ## Table of Contents
-1. [JavaScript Decision Making: Boolean Logic, Comparsion Operators, and Logical Operations](#javascript-decision-making:-boolean-logic,-comparsion-operators,-and-logical-operations)
+1. [JavaScript Decision Making: Boolean Logic, Comparsion Operators, and Logical Operations](#javascript-decision-making-boolean-logic-comparsion-operators-and-logical-operations)
     - [Introduction](#introduction)
     - [What is Decision Making?](#what-is-decision-making)
         - [What is Boolean Logic?](#what-is-boolean-logic)
