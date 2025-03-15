@@ -62,3 +62,15 @@ An array is a special data structure that allows you to store and manipulate mul
 let fruits = ['apple', 'banana', 'cherry'];
 ```
 In this example, the array `fruits` stores three string values. The first element (`'apple'`) is at index `0`, the second element (`'banana'`) is at index `1`, and so on.
+
+## How Arrays are Stored in Memory
+When you create an array and assign it to a variable, the variable itself doesn't store the array. Instead, it stores a reference to the array's location in memory. This is why comparing two identical arrays results in `false`.
+
+```js
+let arr1 = [1,2,3];
+let arr2 = [1,2,3];
+
+console.log(arr1 === arr2);
+```
+
+Even though both arrays have the same content, they are stored in different locations in memory, and the comparison checks the reference, not the content.
