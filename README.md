@@ -18,7 +18,7 @@
 
 *This content has been provided by Colt Steele's course, The Web Developer Bootcamp 2025*
 
-## JavaScript Decision Making: Boolean Logic, Comparsion Operators, and Logical Operations
+# JavaScript Decision Making: Boolean Logic, Comparsion Operators, and Logical Operations
 
 ### Introduction
 This guide will help you understand decision-making in JavaScript. Decision-making involves evaluating conditions and executing code based on those conditions. Even if you're not a technical engineer, this document will make it easy for you to grasp the concepts of Boolean logic, comparison operators, and logical operations.
@@ -51,3 +51,14 @@ Boolean logic is the foundation of decision-making in JavaScript. It deals with 
 </html>
 ```
 
+# Understanding JavaScript Arrays
+
+## Introduction
+This guide is designed to help you understand JavaScript arrays. Arrays are used to store multiple values in a single variable. They can hold objects, numbers, strings, and other data types. Arrays are indexed, meaning each element is associated with a numeric position, starting from zero.
+
+## What is an Array?
+An array is a special data structure that allows you to store and manipulate multiple values. For example:
+```js
+let fruits = ['apple', 'banana', 'cherry'];
+```
+In this example, the array `fruits` stores three string values. The first element (`'apple'`) is at index `0`, the second element (`'banana'`) is at index `1`, and so on.
