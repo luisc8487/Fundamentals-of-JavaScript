@@ -133,3 +133,19 @@ let person = {
 ```
 
 In this example, the object `person` stores a string, a number, an array, and a boolean value.
+
+## Accessing and Modifying Object Properties
+You can access and modify object properties using two methods:
+
+### 1. Dot Notation
+```js
+console.log(person.name); // Output: John
+person.age = 31; // Modifies the age property
+```
+
+### 2. Square Notation
+```js
+console.log(person['age']); // Output: 31
+person['isStudent'] = true; // Modifies the isStudent property
+```
+
