@@ -114,7 +114,7 @@ console.log(a === c); // false
 ## Conclusion
 Understanding JavaScript arrays is essential for effective data management. By leveraging built-in methods and recognizing how arrays are stored in memory, you can efficiently manipulate and manage data in your applications.
 
-# Understanding JavaScript Literals
+# Understanding JavaScript Object Literals
 
 ### Introduction
 This guide will help you understand JavaScript object literals. An object literal is a way to store multiple related values, including variables, functions, and other objects, within a single entity. This document is designed to be comprehensible for non-technical readers.
