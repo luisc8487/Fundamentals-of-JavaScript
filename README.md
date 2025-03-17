@@ -116,5 +116,20 @@ Understanding JavaScript arrays is essential for effective data management. By l
 
 # Understanding JavaScript Object Literals
 
-### Introduction
+## Introduction
 This guide will help you understand JavaScript object literals. An object literal is a way to store multiple related values, including variables, functions, and other objects, within a single entity. This document is designed to be comprehensible for non-technical readers.
+
+## What is an Object Literal? 
+In JavaScript, an object is a collection of key-value pairs. Each key is a string (or symbol), and each value can be any data type, such as numbers, strings, arrays, or even other objects.
+
+### **Example**
+```js
+let person = {
+  name: 'John',
+  age: 30,
+  hobbies: ['reading', 'gaming'],
+  isStudent: false
+};
+```
+
+In this example, the object `person` stores a string, a number, an array, and a boolean value.
