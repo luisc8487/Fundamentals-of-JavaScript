@@ -15,6 +15,17 @@
     - [Modifying Arrays with Built-in Methods](#modifying-arrays-with-built-in-methods)
     - [Comparing Arrays](#comparing-arrays)
     - [Conclusion](#conclusion)
+3. [Understanding JavaScript Object Literals](#understanding-javascript-object-literals)
+    - [Introduction](#introduction)
+    - [What is an Object Literal?](#what-is-an-object-literal?)
+    - [Accessing and Modifying Object Properties](#accessing-and-modifying-object-properties)
+        - [Dot Notation](#dot-notation)
+        - [Square Notation](#square-notation)
+    - [Adding New Properties](#adding-new-properties)
+    - [Nesting Arrays & Objects](#nesting-arrays-&-objects)
+    - [How Objects are Stored in Memory](#how-objects-are-stored-in-memory)
+    - [Conclusion](#conclusion)
+
 
 *This content has been provided by Colt Steele's course, The Web Developer Bootcamp 2025*
 
