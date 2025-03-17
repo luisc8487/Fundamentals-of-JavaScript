@@ -175,3 +175,16 @@ let users = [
 ];
 ```
 
+## How Objects are Stored in Memory
+When you assign an object to a variable, the variable holds a reference to the memory location where the object is stored, not the actual object itself. This is why comparing two identical objects results in `false`.
+
+```js
+let obj1 = { a: 1 };
+let obj2 = { a: 1 };
+
+console.log(obj1 === obj2); // false
+```
+Even though the objects have the same content, they occupy different locations in memory.
+
+## Conclusion
+JavaScript object literals are powerful tools for organizing and managing data. By understanding how to access, modify, and nest data within objects, you can create more dynamic and efficient programs.
