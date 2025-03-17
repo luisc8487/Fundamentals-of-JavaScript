@@ -149,3 +149,29 @@ console.log(person['age']); // Output: 31
 person['isStudent'] = true; // Modifies the isStudent property
 ```
 
+## Adding New Properties
+You can add new key-value pairs using either notation:
+```js
+person.city = 'New York';
+person['country'] = 'USA';
+``` 
+
+## Nesting Arrays & Objects
+JavaScript allows you to store arrays within an object or objects within an array.
+
+### Example of Arrays within an Object:
+```js
+let car = {
+  brand: 'Toyota',
+  models: ['Corolla', 'Camry', 'Prius']
+};
+```
+
+### Example of Objects with an Array:
+```js
+let users = [
+  { name: 'Alice', age: 25 },
+  { name: 'Bob', age: 30 }
+];
+```
+
