@@ -198,4 +198,4 @@ console.log(obj1 === obj2); // false
 Even though the objects have the same content, they occupy different locations in memory.
 
 ## Conclusion
-JavaScript object literals are powerful tools for organizing and managing data. By understanding how to access, modify, and nest data within objects, you can create more dynamic and efficient programs.
+JavaScript object literals are powerful tools for organizing and managing data. By understanding how to access, modify, and nest data within objects, you can create more dynamic and efficient programs....
