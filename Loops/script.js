@@ -45,9 +45,10 @@ for (let i = arr.length - 1; i >= 0; i--) {
 ///////////////// ////////////////
 // Nested Loops
 ///////////////// ///////////////
-
-for (let i = 0; i < 10; i++) {
-  for (let j = 0; j < 10; j++) {
-    console.log(`i: ${i}, j: ${j}`);
+let str = "LOL";
+for (let i = 0; i < 3; i++) {
+  console.log(`Outter Loop: ${i}`);
+  for (let j = 0; j < 3; j++) {
+    console.log(`Inner Loop: ${str[j]}`);
   }
 }
