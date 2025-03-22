@@ -52,3 +52,12 @@ for (let i = 0; i < 3; i++) {
     console.log(`Inner Loop: ${str[j]}`);
   }
 }
+
+///////////////// ////////////////
+// While Loop
+///////////////// ///////////////
+let i = 0;
+while (i < 10) {
+  console.log(i);
+  i++;
+}
