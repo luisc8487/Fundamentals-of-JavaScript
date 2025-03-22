@@ -28,7 +28,7 @@ for (let num = 0; num <= 10; num += 2) {
 }
 
 // loop through an array
-const arr = [1, 2, 3, 4, 5];
+const arr = ["Bob", "Sally", "Tom"];
 for (let i = 0; i < arr.length; i++) {
     console.log(arr[i]);
 }
