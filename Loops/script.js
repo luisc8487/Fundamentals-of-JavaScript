@@ -61,3 +61,14 @@ while (i < 10) {
   console.log(i);
   i++;
 }
+
+///////////////// ////////////////
+// Break
+///////////////// ///////////////
+for (let i = 0; i < 10; i++) {
+    // stop the loop when i is 5
+  if (i === 5) {
+    break;
+  }
+  console.log(i);
+}
