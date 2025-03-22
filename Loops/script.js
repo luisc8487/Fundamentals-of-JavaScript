@@ -41,3 +41,13 @@ const arr = ["Bob", "Sally", "Tom"];
 for (let i = arr.length - 1; i >= 0; i--) {
   console.log(arr[i]);
 }
+
+///////////////// ////////////////
+// Nested Loops
+///////////////// ///////////////
+
+for (let i = 0; i < 10; i++) {
+  for (let j = 0; j < 10; j++) {
+    console.log(`i: ${i}, j: ${j}`);
+  }
+}
