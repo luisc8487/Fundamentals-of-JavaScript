@@ -116,3 +116,12 @@
 //   console.log(char);
 // }
 
+// const testScores = {
+//   "John": 80,
+//   "Jane": 90,
+//   "Bob": 70
+// };
+
+// for (let [name, score] of Object.entries(testScores)) {
+//   console.log(`${name} scored ${score}`);
+// }
