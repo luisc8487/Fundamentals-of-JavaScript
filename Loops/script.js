@@ -82,16 +82,17 @@ console.log(`The guess is ${theGuess} to guess`);
 let amountOfGuesses = 0;
 let guess = prompt("Guess a number between 1 and 10");
 while (guess != theGuess) {
+  if (guess === "q") {
+    alert(`You quit! You guessed ${amountOfGuesses} of times!`);
+  }
+  amountOfGuesses++;
   if (guess > theGuess) {
-    alert("Too high! Enter a new guess:");
+    guess = prompt("Too high! Enter a new guess:");
   } else {
     guess = prompt("Too low! Enter a new guess:");
   }
-  amountOfGuesses++;
-  if (amountOfGuesses === "q") {
-    alert(`You guessed ${amountOfGuesses} of times!`);
-  }
 }
+amountOfGuesses++;
 alert(
   `You guessed ${amountOfGuesses} times in order to get the correct guess!`
 );
