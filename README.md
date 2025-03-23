@@ -287,3 +287,6 @@ In this project, we created a simple todo list app using **HTML and JavaScript**
 4. The user can quit the application by typing `"quit"`.
 
 ![todo-list+loops](https://github.com/user-attachments/assets/dff56d79-9d42-4957-8af3-0dd2e1d79594)
+
+## Conclusion
+In this project, we explored the basics of loops in JavaScript and created a simple todo list app using HTML and JavaScript. We learned about the different types of loops, including for loops, for...of loops, and while loops, and how to use them to iterate through strings and arrays. We also saw how loops can be used to create interactive applications that respond to user input. With this knowledge, you can start building your own projects and exploring the many possibilities of JavaScript programming!
