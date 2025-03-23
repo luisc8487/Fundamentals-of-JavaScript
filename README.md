@@ -274,11 +274,16 @@ for (let element of array) {
   console.log(element);
 }
 ```
+
 ## Project Todo List App
-In this project, we created a simple todo list app using HTML and JavaScript. The app allows users to add new items to the todo list and constantly checks whether the list is empty.
-### Features
-- Add new items to the todo list using the `prompt()` function
-- Check whether the list is empty using a loop
-- Display the todo list on the page using HTML
+
+In this project, we created a simple todo list app using **HTML and JavaScript**. The app allows users to add new items to the todo list and constantly checks whether the list is empty.
+
+### How it Works
+
+1. The user is prompted to enter a `"new"` item to add to the list.
+2. The item is added to the `"list"` and displayed on the page.
+3. The user can delete items from the list by typing `"delete"` followed by the number of the item.
+4. The user can quit the application by typing `"quit"`.
 
 ![todo-list+loops](https://github.com/user-attachments/assets/dff56d79-9d42-4957-8af3-0dd2e1d79594)
