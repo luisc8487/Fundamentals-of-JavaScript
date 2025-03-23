@@ -77,22 +77,42 @@
 // Writing a Guessing Game
 ///////////////// ///////////////
 
-const theGuess = Math.floor(Math.random() * 4) + 1;
-console.log(`The guess is ${theGuess} to guess`);
-let amountOfGuesses = 0;
-let guess = prompt("Guess a number between 1 and 10");
-while (guess != theGuess) {
-  if (guess === "q") {
-    alert(`You quit! You guessed ${amountOfGuesses} of times!`);
-  }
-  amountOfGuesses++;
-  if (guess > theGuess) {
-    guess = prompt("Too high! Enter a new guess:");
-  } else {
-    guess = prompt("Too low! Enter a new guess:");
-  }
-}
-amountOfGuesses++;
-alert(
-  `You guessed ${amountOfGuesses} times in order to get the correct guess!`
-);
+// const theGuess = Math.floor(Math.random() * 4) + 1;
+// console.log(`The guess is ${theGuess} to guess`);
+// let amountOfGuesses = 0;
+// let guess = prompt("Guess a number between 1 and 10");
+// while (guess != theGuess) {
+//   if (guess === "q") {
+//     alert(`You quit! You guessed ${amountOfGuesses} of times!`);
+//   }
+//   amountOfGuesses++;
+//   if (guess > theGuess) {
+//     guess = prompt("Too high! Enter a new guess:");
+//   } else {
+//     guess = prompt("Too low! Enter a new guess:");
+//   }
+// }
+// amountOfGuesses++;
+// alert(
+//   `You guessed ${amountOfGuesses} times in order to get the correct guess!`
+// );
+
+
+/////////////////// ////////////////
+// For of Loop
+/////////////////// ///////////////
+
+// const arr = ["Bob", "Sally", "Tom"];
+
+// for (let i = 0; i < arr.length; i++) {
+//   console.log(arr[i]);
+// }
+
+// for (let name of arr) {
+//   console.log(name);
+// }
+
+// for(let char of "hello") {
+//   console.log(char);
+// }
+
