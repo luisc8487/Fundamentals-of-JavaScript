@@ -8,3 +8,14 @@ function singSong() {
 // call the function twice
 singSong();
 singSong();
+
+///////////////////
+// Arguments
+///////////////////
+
+// declaring a function with one parameter and calling it
+function greet(firstname){
+    console.log(`Hello ${firstname}`);
+};
+
+greet("John");
