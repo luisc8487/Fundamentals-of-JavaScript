@@ -19,3 +19,13 @@ function greet(firstname){
 };
 
 greet("John");
+
+
+///////////////////
+// Return
+///////////////////
+
+// declaring a function with one parameter and calling it with a return statement
+function add(num1, num2){
+    return num1 + num2
+}
