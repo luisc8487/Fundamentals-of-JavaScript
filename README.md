@@ -383,3 +383,20 @@ We can pass arguments of different data types, like this:
 ```js
 calculateArea(5, 3.5); // Output: "The area is 17.5 square meters."
 ```
+
+## Using the Return Keyword
+
+Functions can also return values using the `return` keyword. Here's an example:
+
+```js
+function add(x, y) {
+  return x + y;
+}
+```
+
+We can use the returned value like this:
+
+```js
+let result = add(2, 3);
+console.log(result); // Output: 5
+```
