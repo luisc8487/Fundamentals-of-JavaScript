@@ -309,3 +309,35 @@ Functions are a fundamental concept in programming that allow us to write reusab
 
 ## What are Functions?
 A function is a block of code that can be executed multiple times from different parts of a program. Think of a function like a recipe: you write down the steps to make a cake, and then you can use that recipe to make multiple cakes without having to rewrite the steps each time.
+
+## Why are Functions Useful?
+Functions are useful because they:
+- Allow us to reuse code, making our programs more efficient and easier to maintain.
+- Help us organize our code into smaller, more manageable chunks.
+- Enable us to write more complex programs by breaking them down into smaller, more manageable pieces. 
+
+## Writing a Basic Function
+Here's an example of basic function that says hello:
+```js
+function sayHello(){
+  console.log("Hello!");
+}
+```
+To use this function, we need to invoke it, like this:
+
+```js
+sayHello(); // Output: "Hello!"
+```
+
+## Passing Arguments to a Function
+Functions can also take arguments, which are values that are passed to the function when it's invoked. Here's an example: 
+```js
+function sayHello(name){
+  console.log(`Hello, ${name}!`)
+}
+```
+To use this function, we need to pass an argument, like this:
+```js
+sayHello("Alice"); // Output: "Hello, Alice!"
+```
+
