@@ -3,21 +3,21 @@
 ## Table of Contents
 
 1. [JavaScript Decision Making: Boolean Logic, Comparsion Operators, and Logical Operations](#javascript-decision-making-boolean-logic-comparsion-operators-and-logical-operations)
-   - [Introduction](#introduction)
+   - [Introduction to Decision Making](#introduction-to-descision-making)
    - [What is Decision Making?](#what-is-decision-making)
      - [What is Boolean Logic?](#what-is-boolean-logic)
      - [Comparison Operators](#comparison-operators)
      - [Logic Operators](#logic-operators)
    - [Conclusion](#conclusion)
 2. [Understanding JavaScript Arrays](#understanding-javascript-arrays)
-   - [Introduction](#introduction)
+   - [Introduction to Arrays](#introduction-to-arrays)
    - [What is an Array?](#what-is-an-array?)
    - [How Arrays are Stored in Memory](#how-arrays-are-stored-in-memory)
    - [Modifying Arrays with Built-in Methods](#modifying-arrays-with-built-in-methods)
    - [Comparing Arrays](#comparing-arrays)
    - [Conclusion](#conclusion)
 3. [Understanding JavaScript Object Literals](#understanding-javascript-object-literals)
-   - [Introduction](#introduction)
+   - [Introduction to Object Literals](#introduction-to-object-literals)
    - [What is an Object Literal?](#what-is-an-object-literal?)
    - [Accessing and Modifying Object Properties](#accessing-and-modifying-object-properties)
      - [1. Dot Notation](#1-dot-notation)
@@ -27,7 +27,7 @@
    - [How Objects are Stored in Memory](#how-objects-are-stored-in-memory)
    - [Conclusion](#conclusion)
 4. [Loops in JavaScript](#loops-in-javascript)
-   - [Introduction](#introduction)
+   - [Introduction to Loops](#introduction-to-loops)
    - [Why Use Loops?](#why-use-loops?)
    - [Types of Loops](#types-of-loops)
      - [For Loops](#for-loops)
@@ -36,6 +36,8 @@
    - [Project Todo List App](#project-todo-list-app)
      - [How it Works](#how-it-works)
    - [Conclusion](#conclusion)
+5. [Function in JavaScript](#function-in-javascript)
+  - [Introduction to Function](#introduction-to-function)
 
 _This content has been provided by Colt Steele's course, The Web Developer Bootcamp 2025_
 
@@ -150,7 +152,7 @@ Understanding JavaScript arrays is essential for effective data management. By l
 
 # Understanding JavaScript Object Literals
 
-## Introduction
+## Introduction to Object Literals
 
 This guide will help you understand JavaScript object literals. An object literal is a way to store multiple related values, including variables, functions, and other objects, within a single entity. This document is designed to be comprehensible for non-technical readers.
 
@@ -239,7 +241,7 @@ JavaScript object literals are powerful tools for organizing and managing data. 
 
 # Loops in JavaScript
 
-## Introduction
+## Introduction to Loops
 
 Loops are a fundamental concept in programming that allow us to execute a block of code repeatedly for a specified number of times. In this section, we will explore the different types of loops in JavaScript, their use cases, and how to implement them.
 
@@ -304,7 +306,7 @@ In this project, we explored the basics of loops in JavaScript and created a sim
 
 # Function in JavaScript
 
-## Introduction
+## Introduction to Function
 
 Functions are a fundamental concept in programming that allow us to write reusable code that can be executed multiple times. In this README, I'll explain what functions are, why they're useful, and how to write and use them.
 
