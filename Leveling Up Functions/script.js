@@ -12,3 +12,9 @@ function outerFunction() {
 }
 
 outerFunction();
+
+// Block Scope Example
+{
+    let blockVariable = "I'm in a block!";
+    console.log(blockVariable); // Accessible
+}
