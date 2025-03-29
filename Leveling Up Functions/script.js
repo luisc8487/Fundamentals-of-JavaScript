@@ -18,3 +18,15 @@ outerFunction();
     let blockVariable = "I'm in a block!";
     console.log(blockVariable); // Accessible
 }
+
+// Lexical Scope Example
+function lexicalScopeExample() {
+    let lexicalVariable = "I'm in the outer function!";
+
+    function innerFunction() {
+        console.log(lexicalVariable); // Accessible due to lexical scoping
+    }
+
+    innerFunction();
+}
+lexicalScopeExample();
