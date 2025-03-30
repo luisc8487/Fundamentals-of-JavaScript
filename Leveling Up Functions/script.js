@@ -30,3 +30,16 @@ function lexicalScopeExample() {
     innerFunction();
 }
 lexicalScopeExample();
+
+// Higher Order Function Example
+function higherOrderFunction(callback) {
+    console.log("Before executing the callback");
+    callback();
+    console.log("After executing the callback");
+}
+
+function sayHello() {
+    console.log("Hello, World!");
+}
+
+higherOrderFunction(sayHello);
