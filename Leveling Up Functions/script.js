@@ -43,3 +43,13 @@ function sayHello() {
 }
 
 higherOrderFunction(sayHello);
+
+// Function Returning Another Function Example
+function outerFunction() {
+    return function innerFunction() {
+        console.log("I'm the inner function!");
+    };
+}
+
+const innerFunc = outerFunction(); // Call outerFunction to get innerFunction
+innerFunc(); // Call the inner function returned by outerFunction
