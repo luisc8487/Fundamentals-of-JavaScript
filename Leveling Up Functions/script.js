@@ -53,3 +53,21 @@ function outerFunction() {
 
 const innerFunc = outerFunction(); // Call outerFunction to get innerFunction
 innerFunc(); // Call the inner function returned by outerFunction
+
+// Defining a Method in an Object Example
+const myObject = {
+    myMethod: function() {
+        console.log("I'm a method inside an object!");
+    }
+};
+
+myObject.myMethod(); // Call the method inside the object
+
+// Shothand Method Definition Example
+const anotherObject = {
+    anotherMethod() {
+        console.log("I'm a shorthand method inside an object!");
+    }
+};
+
+anotherObject.anotherMethod(); // Call the shorthand method inside the object
