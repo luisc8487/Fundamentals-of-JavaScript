@@ -71,3 +71,12 @@ const anotherObject = {
 };
 
 anotherObject.anotherMethod(); // Call the shorthand method inside the object
+
+// This Keyword Example
+const person = {
+    name: "Alice",
+    greet: function() {
+        console.log(`Hello, my name is ${this.name}`);
+    }
+};
+person.greet(); // Call the method, 'this' refers to the person object  
