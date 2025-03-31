@@ -80,3 +80,12 @@ const person = {
     }
 };
 person.greet(); // Call the method, 'this' refers to the person object  
+
+// Try / Catch Example
+try {
+    // Code that may throw an error
+    let result = riskyFunction(); // Assume this function is not defined
+}
+catch (error) {
+    console.error("An error occurred:", error.message);
+}
