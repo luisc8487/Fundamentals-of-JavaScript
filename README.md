@@ -37,13 +37,13 @@
      - [How it Works](#how-it-works)
    - [Conclusion](#conclusion)
 5. [Function in JavaScript](#function-in-javascript)
-    - [Introduction to Function](#introduction-to-function)
-    - [What are Functions?](#what-are-functions)
-    - [Why are Functions Useful?](#why-are-functions-useful)
-    - [Writing a Basic Function](#writing-a-basic-function)
-    - [Passing Arguments to a Function](#passing-arguments-to-a-function)
-    - [Multiple Arguments and Data Types](#multiple-arguments-and-data-types)
-    - [Using the Return Keyword](#using-the-return-keyword)
+   - [Introduction to Function](#introduction-to-function)
+   - [What are Functions?](#what-are-functions)
+   - [Why are Functions Useful?](#why-are-functions-useful)
+   - [Writing a Basic Function](#writing-a-basic-function)
+   - [Passing Arguments to a Function](#passing-arguments-to-a-function)
+   - [Multiple Arguments and Data Types](#multiple-arguments-and-data-types)
+   - [Using the Return Keyword](#using-the-return-keyword)
 
 _This content has been provided by Colt Steele's course, The Web Developer Bootcamp 2025_
 
@@ -311,7 +311,7 @@ In this project, we created a simple todo list app using **HTML and JavaScript**
 In this project, we explored the basics of loops in JavaScript and created a simple todo list app using HTML and JavaScript. We learned about the different types of loops, including for loops, for...of loops, and while loops, and how to use them to iterate through strings and arrays. We also saw how loops can be used to create interactive applications that respond to user input. With this knowledge, you can start building your own projects and exploring the many possibilities of JavaScript programming!
 
 # Function in JavaScript
----
+
 ## Introduction to Function
 
 Functions are a fundamental concept in programming that allow us to write reusable code that can be executed multiple times. In this README, I'll explain what functions are, why they're useful, and how to write and use them.
@@ -410,9 +410,45 @@ console.log(result); // Output: 5
 ```
 
 # Understanding Scope and Key JavaScript Concepts
+
 This guide will help you understand the concept of **scope** in JavaScript and how it determines the accessibility of variables based on where they are defined. We will also explore **function scope**, **block scope**, **lexical scope**, **higher-order functions**, creating methods within objects using shorthand, and the use of the `this` keyword.
+
+## What is Scope?
+
+In JavaScript, **scope** refers to the context in which variables are accessible. Depending on where a variable is defined, it may or may not be accessible in different parts of your code. Scope ensures that variables are only available where they are needed, helping to avoid conflicts and bugs.
+
+## Function Scope
+
+Variables declared inside a function are only accessible within that function. This is called **function scope**.
+
+### Example
+
+```js
+function greet() {
+  let message = "Hello, World!";
+  console.log(message); // Accessible inside the function
+}
+
+greet();
+// console.log(message); // Unaccessible, would throw an error
+```
+
+In this example, the variable `message` is only accessible inside the `greet` function.
 
 ---
 
-## What is Scope?
-In JavaScript, **scope** refers to the context in which variables are accessible. Depending on where a variable is defined, it may or may not be accessible in different parts of your code. Scope ensures that variables are only available where they are needed, helping to avoid conflicts and bugs.
+### Block Scope
+
+Variables declared with let or const inside a block (e.g., inside {}) are only accessible within that block. This is called **block scope**.
+
+Example:
+
+```js
+{
+  let blockVariable = "I'm in a block!";
+  console.log(blockVariable); // Accessible inside the block
+}
+// console.log(blockVariable); // Unaccessible, would throw an error
+```
+Here, `blockVariable` is only accessible within the block where it is defined.
+
