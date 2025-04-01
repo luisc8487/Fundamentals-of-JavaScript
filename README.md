@@ -311,9 +311,7 @@ In this project, we created a simple todo list app using **HTML and JavaScript**
 In this project, we explored the basics of loops in JavaScript and created a simple todo list app using HTML and JavaScript. We learned about the different types of loops, including for loops, for...of loops, and while loops, and how to use them to iterate through strings and arrays. We also saw how loops can be used to create interactive applications that respond to user input. With this knowledge, you can start building your own projects and exploring the many possibilities of JavaScript programming!
 
 # Function in JavaScript
-
 ---
-
 ## Introduction to Function
 
 Functions are a fundamental concept in programming that allow us to write reusable code that can be executed multiple times. In this README, I'll explain what functions are, why they're useful, and how to write and use them.
