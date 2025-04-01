@@ -37,13 +37,13 @@
      - [How it Works](#how-it-works)
    - [Conclusion](#conclusion)
 5. [Function in JavaScript](#function-in-javascript)
-  - [Introduction to Function](#introduction-to-function)
-  - [What are Functions?](#what-are-functions)
-  - [Why are Functions Useful?](#why-are-functions-useful)
-  - [Writing a Basic Function](#writing-a-basic-function)
-  - [Passing Arguments to a Function](#passing-arguments-to-a-function)
-  - [Multiple Arguments and Data Types](#multiple-arguments-and-data-types)
-  - [Using the Return Keyword](#using-the-return-keyword)
+    - [Introduction to Function](#introduction-to-function)
+    - [What are Functions?](#what-are-functions)
+    - [Why are Functions Useful?](#why-are-functions-useful)
+    - [Writing a Basic Function](#writing-a-basic-function)
+    - [Passing Arguments to a Function](#passing-arguments-to-a-function)
+    - [Multiple Arguments and Data Types](#multiple-arguments-and-data-types)
+    - [Using the Return Keyword](#using-the-return-keyword)
 
 _This content has been provided by Colt Steele's course, The Web Developer Bootcamp 2025_
 
@@ -311,6 +311,8 @@ In this project, we created a simple todo list app using **HTML and JavaScript**
 In this project, we explored the basics of loops in JavaScript and created a simple todo list app using HTML and JavaScript. We learned about the different types of loops, including for loops, for...of loops, and while loops, and how to use them to iterate through strings and arrays. We also saw how loops can be used to create interactive applications that respond to user input. With this knowledge, you can start building your own projects and exploring the many possibilities of JavaScript programming!
 
 # Function in JavaScript
+
+---
 
 ## Introduction to Function
 
