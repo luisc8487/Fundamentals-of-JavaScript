@@ -34,3 +34,12 @@ console.log(doubledNumbers); // Output: [2, 4, 6, 8, 10]
 person.map((trait) => {
   console.log(`${trait.name} would be ${trait.age * 2} years old if it was `); // Output: John is 30 years old.
 });
+
+// setTimeout
+console.log('Hello!');
+setTimeout(() => {
+  console.log('This message is delayed by 2 seconds: .....are you still there?'); // Output: This message is delayed by 2 seconds.
+
+}, 2000); // Output: This message is delayed by 2 seconds.
+
+console.log('Goodbye!');
