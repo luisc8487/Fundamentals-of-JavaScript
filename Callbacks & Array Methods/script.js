@@ -22,7 +22,7 @@ person.forEach((trait) => {
   console.log(`${trait.name} lives in ${trait.city}.`); // Output: John lives in New York.
 });
 
-// map method
+// map method with the use of Arrow function
 
 // The map method creates a new array populated with the results of calling a provided function on every element in the calling array.
 // It is also a higher-order function that takes a callback function as an argument and applies it to each element in the array, returning a new array. 
