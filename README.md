@@ -450,22 +450,53 @@ Example:
 }
 // console.log(blockVariable); // Unaccessible, would throw an error
 ```
+
 Here, `blockVariable` is only accessible within the block where it is defined.
 
 ### Lexical Scope
+
 **Lexical scope** means that a function can access variables from its outer scope (where it was defined), even if the outer function has already finished executing.
 
 Example:
+
 ```js
 function outerFunction() {
-    let outerVariable = "I'm outside!";
+  let outerVariable = "I'm outside!";
 
-    function innerFunction() {
-        console.log(outerVariable); // Accessible due to lexical scoping
-    }
+  function innerFunction() {
+    console.log(outerVariable); // Accessible due to lexical scoping
+  }
 
-    innerFunction();
+  innerFunction();
 }
 
 outerFunction();
 ```
+
+In this example, `innerFunction` can access `outerVariable` because it is defined in the outer scope.
+
+---
+
+### Higher Order Functions
+
+A **higher-order function** is a function that either:
+
+1. Takes another function as an argument or
+2. Return a function
+
+Example:
+
+```js
+function higherOrderFunction(callback) {
+  console.log("Before executing the callback");
+  callback(); // Executes the passed function
+  console.log("After executing the callback");
+}
+
+function sayHello() {
+  console.log("Hello, World!");
+}
+
+higherOrderFunction(sayHello);
+```
+Here, `higherOrderFunction` takes sayHello as an argument and executes it.
