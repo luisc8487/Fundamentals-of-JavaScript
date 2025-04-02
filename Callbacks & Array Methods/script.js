@@ -71,3 +71,10 @@ console.log(hasEvenNumbers); // Output: true
 const numbers5 = [1, 2, 3, 4, 5];
 const allEvenNumbers = numbers5.every((number) => number % 2 === 0);
 console.log(allEvenNumbers); // Output: false
+
+// Reduce method with the use of Arrow function
+// The reduce method executes a reducer function (that you provide) on each element of the array, resulting in a single output value.
+
+const numbers6 = [1, 2, 3, 4, 5];
+const sum = numbers6.reduce((accumulator, number) => accumulator + number, 0);
+console.log(sum); // Output: 15
