@@ -43,3 +43,12 @@ setTimeout(() => {
 }, 2000); // Output: This message is delayed by 2 seconds.
 
 console.log('Goodbye!');
+
+// setInterval
+console.log('Hello!');
+const id = setInterval(() => {
+  console.log('This message is repeated every 2 seconds: .....are you still there?'); // Output: This message is repeated every 2 seconds.
+}, 2000); // Output: This message is repeated every 2 seconds.
+
+clearInterval(id, 2000); // Stops the interval after 2 seconds
+console.log('Goodbye!');
