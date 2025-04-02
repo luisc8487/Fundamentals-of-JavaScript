@@ -452,3 +452,20 @@ Example:
 ```
 Here, `blockVariable` is only accessible within the block where it is defined.
 
+### Lexical Scope
+**Lexical scope** means that a function can access variables from its outer scope (where it was defined), even if the outer function has already finished executing.
+
+Example:
+```js
+function outerFunction() {
+    let outerVariable = "I'm outside!";
+
+    function innerFunction() {
+        console.log(outerVariable); // Accessible due to lexical scoping
+    }
+
+    innerFunction();
+}
+
+outerFunction();
+```
