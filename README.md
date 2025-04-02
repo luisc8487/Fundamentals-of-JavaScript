@@ -499,4 +499,46 @@ function sayHello() {
 
 higherOrderFunction(sayHello);
 ```
+
 Here, `higherOrderFunction` takes sayHello as an argument and executes it.
+
+---
+
+### Creating Methods in Objects Using Shorthand
+
+In JavaScript, you can define methods (functions inside objects) using shorthand syntax.
+
+Example:
+
+```js
+const myObject = {
+  myMethod() {
+    console.log("I'm a shorthand method inside an object!");
+  },
+};
+
+myObject.myMethod(); // Calls the method
+```
+
+---
+
+### The `this` Keyword
+
+The `this` keyword refers to the object that is currently executing the code. Its value depends on how and where it is used.
+
+Example:
+
+```js
+const person = {
+  name: "Alice",
+  greet() {
+    console.log(`Hello, my name is ${this.name}`);
+  },
+};
+
+person.greet(); // Logs: "Hello, my name is Alice"
+```
+
+In this example, `this.name` refers to the `name` property of the `person` object.
+
+
