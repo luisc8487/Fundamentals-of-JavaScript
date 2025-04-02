@@ -52,3 +52,8 @@ const id = setInterval(() => {
 
 clearInterval(id, 2000); // Stops the interval after 2 seconds
 console.log('Goodbye!');
+
+// Filter method with the use of Arrow function
+const numbers3 = [1, 2, 3, 4, 5];
+const evenNumbers = numbers3.filter((number) => number % 2 === 0);
+console.log(evenNumbers); // Output: [2, 4] 
