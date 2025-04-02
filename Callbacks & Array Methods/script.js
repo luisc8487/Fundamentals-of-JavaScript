@@ -57,3 +57,9 @@ console.log('Goodbye!');
 const numbers3 = [1, 2, 3, 4, 5];
 const evenNumbers = numbers3.filter((number) => number % 2 === 0);
 console.log(evenNumbers); // Output: [2, 4] 
+
+// Some method with the use of Arrow function
+
+const numbers4 = [1, 2, 3, 4, 5];
+const hasEvenNumbers = numbers4.some((number) => number % 2 === 0);
+console.log(hasEvenNumbers); // Output: true
