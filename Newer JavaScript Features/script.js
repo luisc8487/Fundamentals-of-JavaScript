@@ -22,7 +22,7 @@ console.log(multiply(5)); // Output: 10 (5 * 1 * 2)
 const arr1 = [1, 2, 3];
 const arr2 = [4, 5, 6];
 const combined = [...arr1, ...arr2]; // Spread operator to combine arrays
-console.log(combined); // Output: [1, 2, 3, 4, 5, 6]    
+console.log(combined); // Output: [1, 2, 3, 4, 5, 6]
 
 // Spread operator with function calls
 function add(x, y, z) {
@@ -33,7 +33,15 @@ const sum = add(...numbers4); // Spread operator to pass array elements as argum
 console.log(sum); // Output: 6
 
 // Spread operator with objects
-const obj1 = { a: 1, b: 2 };
-const obj2 = { c: 3, d: 4 };
-const combinedObj = { ...obj1, ...obj2 }; // Spread operator to combine objects
+const obj1 = {a: 1, b: 2};
+const obj2 = {c: 3, d: 4};
+const combinedObj = {...obj1, ...obj2}; // Spread operator to combine objects
 console.log(combinedObj); // Output: { a: 1, b: 2, c: 3, d: 4 }
+
+// Rest Parameters
+// The rest parameters syntax allows us to represent an indefinite number of arguments as an array.
+// It is denoted by three dots (...) before the parameter name.
+
+function sum(...numbers) {
+  return numbers.reduce((accumulator, number) => accumulator + number, 0);
+}
