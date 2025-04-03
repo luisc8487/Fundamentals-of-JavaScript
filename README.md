@@ -612,5 +612,27 @@ console.log(updatedPerson);
 ```
 
 **Why is the spread operator beneficial?**
+
 - It simplifies copying and merging arrays or objects.
 - It avoids modifying the original data (maintains immutability).
+
+## Rest Parameters (`...`)
+
+The **rest parameters** syntax allows you to collect all remaining arguments into a single array. This is useful when you don't know how many arguments a function will receive.
+
+Example:
+
+```js
+function sum(...numbers) {
+  return numbers.reduce((total, num) => total + num, 0);
+}
+
+console.log(sum(1, 2, 3, 4)); // Output: 10
+console.log(sum(5, 10)); // Output: 15
+```
+
+**Why is this useful?**
+
+- It makes your functions more flexible by allowing them to handle any number of arguments.
+- It simplifies working with variable-length arguments.
+
