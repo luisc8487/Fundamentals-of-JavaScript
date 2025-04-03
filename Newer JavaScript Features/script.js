@@ -59,3 +59,13 @@ console.log(raceResults('Alice', 'Bob', 'Charlie', 'David', 'Eve'));
 // Gold medal: Alice    
 // Silver medal: Bob
 // Other participants: Charlie, David, Eve
+
+// Destructuring Assignment
+// Destructuring assignment allows unpacking values from arrays or properties from objects into distinct variables.
+// It provides a more concise way to extract values from arrays or objects. 
+// It is denoted by curly braces {} for objects and square brackets [] for arrays.
+
+const arr5 = [1, 2, 3];
+const [x, y, z] = arr5; // Destructuring assignment for arrays
+// x = 1, y = 2, z = 3
+console.log(x, y, z); // Output: 1 2 3
