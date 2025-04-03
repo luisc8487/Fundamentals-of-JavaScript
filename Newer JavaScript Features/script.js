@@ -45,3 +45,17 @@ console.log(combinedObj); // Output: { a: 1, b: 2, c: 3, d: 4 }
 function sum(...numbers) {
   return numbers.reduce((accumulator, number) => accumulator + number, 0);
 }
+
+console.log(sum(1, 2, 3, 4, 5)); // Output: 15 (1 + 2 + 3 + 4 + 5)
+
+function raceResults(gold, silver, ...others) {
+  console.log(`Gold medal: ${gold}`);
+  console.log(`Silver medal: ${silver}`);
+  console.log(`Other participants: ${others.join(', ')}`);
+}
+
+console.log(raceResults('Alice', 'Bob', 'Charlie', 'David', 'Eve'));
+// Output:
+// Gold medal: Alice    
+// Silver medal: Bob
+// Other participants: Charlie, David, Eve
