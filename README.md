@@ -583,6 +583,34 @@ greet("Alice"); // Output: Hello, Alice!
 ```
 
 **Why is this useful?**
+
 - It makes your code cleaner and easier to read.
 - You no longer need to write extra logic to handle missing parameters.
 
+## Spread Operator (`...`)
+
+The **spread operator** allows you to "spread" the elements of an array or object into another array or object. It is incredibly useful for copying, combining, or expanding arrays and objects.
+
+### Using Spread with Arrays:
+
+```js
+const fruits = ["apple", "banana", "cherry"];
+const moreFruits = ["orange", ...fruits, "grape"];
+
+console.log(moreFruits);
+// Output: ["orange", "apple", "banana", "cherry", "grape"]
+```
+
+### Using Spread with Objects:
+
+```js
+const person = {name: "Alice", age: 25};
+const updatedPerson = {...person, city: "New York"};
+
+console.log(updatedPerson);
+// Output: { name: "Alice", age: 25, city: "New York" }
+```
+
+**Why is the spread operator beneficial?**
+- It simplifies copying and merging arrays or objects.
+- It avoids modifying the original data (maintains immutability).
