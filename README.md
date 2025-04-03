@@ -556,4 +556,33 @@ In this example, `this.name` refers to the `name` property of the `person` objec
 This guide will help you understand some modern JavaScript features, including **default parameters**, the **spread operator**, **rest parameters**, and **destructuring**. These features make your code cleaner, more efficient, and easier to read.
 
 ## Default Parameters
+
 Default parameters allow you to set a default value for a function's parameter. If no value is provided when the function is called, the default value will be used.
+
+### Old Way (Before ES6):
+
+```javascript
+function greet(name) {
+  name = name || "Guest"; // Use "Guest" if no name is provided
+  console.log(`Hello, ${name}!`);
+}
+
+greet(); // Output: Hello, Guest!
+greet("Alice"); // Output: Hello, Alice!
+```
+
+### New Way (With ES6 Default Parameters):
+
+```js
+function greet(name = "Guest") {
+  console.log(`Hello, ${name}!`);
+}
+
+greet(); // Output: Hello, Guest!
+greet("Alice"); // Output: Hello, Alice!
+```
+
+**Why is this useful?**
+- It makes your code cleaner and easier to read.
+- You no longer need to write extra logic to handle missing parameters.
+
