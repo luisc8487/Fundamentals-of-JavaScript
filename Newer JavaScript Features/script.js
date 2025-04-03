@@ -69,3 +69,11 @@ const arr5 = [1, 2, 3];
 const [x, y, z] = arr5; // Destructuring assignment for arrays
 // x = 1, y = 2, z = 3
 console.log(x, y, z); // Output: 1 2 3
+
+// Destructuring assignment for objects
+const person = { name: 'John', age: 30 };
+const { name, age, gender = 'Not specified' } = person; // 'gender' does not exist in the object, so default value is used
+console.log(name); // Output: John
+console.log(age); // Output: 30
+console.log(gender); // Output: Not specified
+
