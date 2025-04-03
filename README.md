@@ -550,3 +550,10 @@ In this example, `this.name` refers to the `name` property of the `person` objec
 - **Higher-Order Functions**: Functions that take other functions as arguments or return functions.
 - **Shorthand Methods**: A cleaner way to define methods inside objects.
 - **The `this` Keyword**: Refers to the object that is executing the code.
+
+# JavaScript Modern Features: Default Parameters, Spread Operator, Rest Parameters, and Destructuring
+
+This guide will help you understand some modern JavaScript features, including **default parameters**, the **spread operator**, **rest parameters**, and **destructuring**. These features make your code cleaner, more efficient, and easier to read.
+
+## Default Parameters
+Default parameters allow you to set a default value for a function's parameter. If no value is provided when the function is called, the default value will be used.
