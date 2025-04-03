@@ -77,3 +77,10 @@ console.log(name); // Output: John
 console.log(age); // Output: 30
 console.log(gender); // Output: Not specified
 
+// Destructuring Params
+const person2 = { name: 'Alice', age: 25 };
+function greet({ name, age }) {
+  console.log(`Hello, my name is ${name} and I am ${age} years old.`);
+}
+greet(person2); // Output: Hello, my name is Alice and I am 25 years old.
+
