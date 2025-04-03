@@ -32,4 +32,8 @@ const numbers4 = [1, 2, 3];
 const sum = add(...numbers4); // Spread operator to pass array elements as arguments
 console.log(sum); // Output: 6
 
-
+// Spread operator with objects
+const obj1 = { a: 1, b: 2 };
+const obj2 = { c: 3, d: 4 };
+const combinedObj = { ...obj1, ...obj2 }; // Spread operator to combine objects
+console.log(combinedObj); // Output: { a: 1, b: 2, c: 3, d: 4 }
