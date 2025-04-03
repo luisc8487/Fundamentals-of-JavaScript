@@ -636,3 +636,42 @@ console.log(sum(5, 10)); // Output: 15
 - It makes your functions more flexible by allowing them to handle any number of arguments.
 - It simplifies working with variable-length arguments.
 
+## Destructuring
+
+**Destructuring** allows you to extract values from arrays or objects and assign them to variables in a clean and concise way.
+
+### Destructuring Arrays:
+
+```js
+const fruits = ["apple", "banana", "cherry"];
+const [first, second] = fruits;
+
+console.log(first); // Output: apple
+console.log(second); // Output: banana
+```
+
+### Destructuring Objects:
+
+```js
+const person = {name: "Alice", age: 25, city: "New York"};
+const {name, city} = person;
+
+console.log(name); // Output: Alice
+console.log(city); // Output: New York
+```
+
+### Destructuring Function Parameters:
+
+```js
+function introduce({name, age}) {
+  console.log(`Hi, I'm ${name} and I'm ${age} years old.`);
+}
+
+const person = {name: "Alice", age: 25};
+introduce(person);
+// Output: Hi, I'm Alice and I'm 25 years old.
+```
+
+**Why is destructuring important?**
+- It makes your code cleaner and easier to read.
+- It reduces the need for repetitive code when accessing array or object properties.
