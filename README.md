@@ -760,3 +760,45 @@ document.querySelectorAll("img").forEach((img) => {
   img.style.height = "100px";
 });
 ```
+
+### Key JavaScript Methods Used
+
+#### 1. `querySelector`
+
+This method selects an element from the HTML. For example:
+
+```js
+const container = document.querySelector("#container");
+```
+
+Here, we select the element with the ID `container`.
+
+#### 2. `createElement`
+
+This method creates a new HTML element. For example:
+
+```js
+const pokemon = document.createElement("div");
+```
+
+Here, we create a new `div` element to hold each Pokémon.
+
+#### 3. `appendChild`
+
+This method adds a new child element to an existing element. For example:
+
+```js
+pokemon.appendChild(newImg);
+```
+
+#### 4. Styling Through the DOM
+
+We used JavaScript to apply styles directly to elements. For example:
+
+```js
+pokemon.style.border = "solid black 1px";
+```
+
+This adds a black border to each Pokémon container.
+
+
