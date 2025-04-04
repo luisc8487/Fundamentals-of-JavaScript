@@ -683,3 +683,33 @@ introduce(person);
 - **Spread Operator**: Simplifies copying, merging, and expanding arrays or objects.
 - **Rest Parameters**: Collects all remaining arguments into an array, making functions more flexible.
 - **Destructuring**: Extracts values from arrays or objects into variables, improving code readability.
+
+# Creating a List of Pokémon Sprites Using the DOM
+
+This guide explains how I used JavaScript and the **DOM (Document Object Model)** to dynamically create a list of Pokémon sprites. The project demonstrates how to add elements to a webpage, style them, and display Pokémon images with their respective numbers.
+
+## What is the DOM?
+
+The **DOM (Document Object Model)** is a way for JavaScript to interact with and manipulate the structure of a webpage. It allows us to dynamically add, remove, or modify elements on the page.
+
+## What Does This Project Do?
+
+This project creates a list of 151 Pokémon sprites (images) and displays them on the webpage. Each Pokémon is shown with its image and corresponding number (e.g., #1 for Bulbasaur). The sprites are styled to look neat and organized.
+
+## How It Works
+
+### 1. Selecting the Container
+
+We start by selecting the container where the Pokémon will be displayed using `querySelector`. This allows us to target an element in the HTML by its ID.
+
+```js
+const container = document.querySelector("#container");
+```
+
+### 2. Creating Pokémon Elements
+
+We use a `for` loop to create 151 Pokémon elements. For each Pokémon:
+
+- A `div` is created to hold the Pokémon's image and number.
+- A `span` is created to display the Pokémon's number (e.g., #1, #2, etc.).
+- An `img` is created to display the Pokémon's sprite (image).
