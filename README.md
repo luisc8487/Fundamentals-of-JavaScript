@@ -713,3 +713,19 @@ We use a `for` loop to create 151 Pokémon elements. For each Pokémon:
 - A `div` is created to hold the Pokémon's image and number.
 - A `span` is created to display the Pokémon's number (e.g., #1, #2, etc.).
 - An `img` is created to display the Pokémon's sprite (image).
+
+```js
+for (let i = 1; i <= 151; i++) {
+  const pokemon = document.createElement("div"); // Create a container for each Pokémon
+  const label = document.createElement("span"); // Create a label for the Pokémon number
+  label.innerText = `#${i}`; // Set the text to the Pokémon number
+  const newImg = document.createElement("img"); // Create an image element
+  newImg.src = `${baseURL}${i}.png`; // Set the image source to the Pokémon sprite URL
+
+  pokemon.appendChild(newImg); // Add the image to the Pokémon container
+  pokemon.appendChild(label); // Add the label to the Pokémon container
+  container.appendChild(pokemon); // Add the Pokémon container to the main container
+}
+```
+
+
