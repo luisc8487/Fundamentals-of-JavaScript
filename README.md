@@ -728,4 +728,35 @@ for (let i = 1; i <= 151; i++) {
 }
 ```
 
+### 3. Styling the Pokemon
 
+To make the Pokémon list look visually appealing, I added styles to the `div` and `img` elements using JavaScript.
+
+#### Styling the Pokemon Containers:
+
+- Added a border and rounded corners.
+- Set a light blue background color.
+- Arranged the Pokémon in a grid-like layout with margins and padding.
+
+```js
+document.querySelectorAll("div").forEach((pokemon) => {
+  pokemon.style.border = "solid black 1px";
+  pokemon.style.borderRadius = "10px";
+  pokemon.style.backgroundColor = "lightblue";
+  pokemon.style.display = "inline-block";
+  pokemon.style.margin = "10px";
+  pokemon.style.padding = "10px";
+  pokemon.style.textAlign = "center";
+});
+```
+
+#### Styling the Pokemon Images:
+
+- Set a fixed width and height for the images to ensure consistency.
+
+```js
+document.querySelectorAll("img").forEach((img) => {
+  img.style.width = "100px";
+  img.style.height = "100px";
+});
+```
