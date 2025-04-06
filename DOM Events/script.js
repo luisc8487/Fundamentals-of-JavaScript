@@ -7,5 +7,10 @@ btn.onclick = () => {
 
 function scream() {
     console.log("AHHHHHHHHHH!!!");
+    console.log("STOP TOUCHING ME!");
 }
 btn.onmouseenter = scream;
+
+document.querySelector("h1").onclick = () => {
+    alert("YOU CLICKED THE HEADING!");
+}
