@@ -5,3 +5,7 @@ btn.onclick = () => {
     console.log("I HOPE YOU LIKE ME!");
 };
 
+function scream() {
+    console.log("AHHHHHHHHHH!!!");
+}
+btn.onmouseenter = scream;
