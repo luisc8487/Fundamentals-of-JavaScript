@@ -62,6 +62,13 @@ fakeRequestPromise("yelp.com/api/coffee/page1")
     fakeRequestPromise("yelp.com/api/coffee/page2")
       .then(() => {
         console.log("2nd Data received!");
+        fakeRequestPromise("yelp.com/api/coffee/page3")
+          .then(() => {
+            console.log("3rd Data received!");
+          })
+          .catch(() => {
+            console.log("3rd Error!");
+          });
       })
       .catch(() => {
         console.log("2nd Error!");
