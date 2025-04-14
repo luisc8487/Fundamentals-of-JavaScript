@@ -21,3 +21,10 @@
 //     console.log("Error: ", error);
 //   });
 
+// const delayColor = (newColor, delay, doNext) => {
+//     setTimeout(() => {
+//         document.body.style.backgroundColor = newColor;
+//         doNext && doNext();
+//     }, delay);
+// };
+

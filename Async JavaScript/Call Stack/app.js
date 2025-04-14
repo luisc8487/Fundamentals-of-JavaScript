@@ -2,6 +2,14 @@
 // Call Stack
 ///////////////////
 
+// The call stack is a data structure that keeps track of function calls in JavaScript.
+
+// When you call a function, it's like placing a new plate on top of the stack. Each plate represents a function that needs to be completed.
+// If that function calls another function, you add another plate on top of the stack.
+// The stack grows as more functions are called, with the most recent function (plate) always on top.
+// When a function finishes (returns a value), you remove the top plate from the stack.
+// This process continues until there are no more plates (functions) left on the stack.
+
 function multiply(a, b) {
   return a * b;
 }
