@@ -56,24 +56,44 @@ const fakeRequestPromise = (url) => {
 //   }
 // );
 
+// fakeRequestPromise("yelp.com/api/coffee/page1")
+//   .then(() => {
+//     console.log("1st Data received!");
+//     fakeRequestPromise("yelp.com/api/coffee/page2")
+//       .then(() => {
+//         console.log("2nd Data received!");
+//         fakeRequestPromise("yelp.com/api/coffee/page3")
+//             .then( ()=> {
+//                 console.log("3rd Data received!");
+//             })
+//             .catch(() => {
+//                 console.log("3rd Error!");
+//             });
+//       })
+//       .catch(() => {
+//         console.log("2nd Error!");
+//       });
+//   })
+//   .catch(() => {
+//     console.log("Error occurred!");
+//   });
+
 fakeRequestPromise("yelp.com/api/coffee/page1")
-  .then(() => {
+  .then((data) => {
     console.log("1st Data received!");
-    fakeRequestPromise("yelp.com/api/coffee/page2")
-      .then(() => {
-        console.log("2nd Data received!");
-        fakeRequestPromise("yelp.com/api/coffee/page3")
-          .then(() => {
-            console.log("3rd Data received!");
-          })
-          .catch(() => {
-            console.log("3rd Error!");
-          });
-      })
-      .catch(() => {
-        console.log("2nd Error!");
-      });
+    console.log(data);
+    return fakeRequestPromise("yelp.com/api/coffee/page2");
   })
-  .catch(() => {
+  .then((data) => {
+    console.log("2nd Data received!");
+    console.log(data);
+    return fakeRequestPromise("yelp.com/api/coffee/page3");
+  })
+  .then((data) => {
+    console.log("3rd Data received!");
+    console.log(data);
+  })
+  .catch((error) => {
     console.log("Error occurred!");
+    console.log(error);
   });
