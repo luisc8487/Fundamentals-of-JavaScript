@@ -44,6 +44,43 @@
    - [Passing Arguments to a Function](#passing-arguments-to-a-function)
    - [Multiple Arguments and Data Types](#multiple-arguments-and-data-types)
    - [Using the Return Keyword](#using-the-return-keyword)
+6. [Understanding Scope and Key JavaScript Concepts](#understanding-scope-and-key-javascript-concepts)
+   - [What is Scope?](#what-is-scope)
+   - [Function Scope](#function-scope)
+     - [Block Scope](#block-scope)
+     - [Lexical Scope](#lexical-scope)
+     - [Higher Order Functions](#higher-order-functions)
+     - [Creating Methods in Objects Using Shorthand](#creating-methods-in-objects-using-shorthand)
+     - [The `this` Keyword](#the-this-keyword)
+   - [Conclusion for Scope and Key Concepts](#conclusion-for-scope-and-key-concepts)
+7. [JavaScript Modern Features: Default Parameters, Spread Operator, Rest Parameters, and Destructuring](#javascript-modern-features-default-parameters-spread-operator-rest-parameters-and-destructuring)
+   - [Default Parameters](#default-parameters)
+     - [Old Way (Before ES6)](#old-way-before-es6)
+     - [New Way (With ES6 Default Parameters)](#new-way-with-es6-default-parameters)
+   - [Spread Operator (`...`)](#spread-operator-)
+     - [Using Spread with Arrays](#using-spread-with-arrays)
+     - [Using Spread with Objects](#using-spread-with-objects)
+   - [Rest Parameters (`...`)](#rest-parameters-)
+   - [Destructuring](#destructuring)
+     - [Destructuring Arrays](#destructuring-arrays)
+     - [Destructuring Objects](#destructuring-objects)
+     - [Destructuring Function Parameters](#destructuring-function-parameters)
+   - [Conclusion for Default Parameters, Spread Operator, Rest Parameters & Destructuring](#conclusion-for-default-parameters-spread-operator-rest-parameters--destructuring)
+8. [Creating a List of Pokémon Sprites Using the DOM](#creating-a-list-of-pokémon-sprites-using-the-dom)
+   - [What is the DOM?](#what-is-the-dom)
+   - [What Does This Project Do?](#what-does-this-project-do)
+   - [How Does This Project Work](#how-does-this-project-work)
+     - [1. Selecting the Container](#1-selecting-the-container)
+     - [2. Creating Pokémon Elements](#2-creating-pokémon-elements)
+     - [3. Styling the Pokemon](#3-styling-the-pokemon)
+       - [Styling the Pokemon Containers](#styling-the-pokemon-containers)
+       - [Styling the Pokemon Images](#styling-the-pokemon-images)
+     - [Key JavaScript Methods Used](#key-javascript-methods-used)
+       - [1. `querySelector`](#1-queryselector)
+       - [2. `createElement`](#2-createelement)
+       - [3. `appendChild`](#3-appendchild)
+       - [4. Styling Through the DOM](#4-styling-through-the-dom)
+   - [Conclusion for Creating List of Pokemon Sprites (DOM)](#conclusion-for-creating-list-of-pokemon-sprites-dom)
 
 _This content has been provided by Colt Steele's course, The Web Developer Bootcamp 2025_
 
@@ -421,7 +458,7 @@ In JavaScript, **scope** refers to the context in which variables are accessible
 
 Variables declared inside a function are only accessible within that function. This is called **function scope**.
 
-### Example
+#### Example:
 
 ```js
 function greet() {
@@ -484,7 +521,7 @@ A **higher-order function** is a function that either:
 1. Takes another function as an argument or
 2. Return a function
 
-Example:
+#### Example:
 
 ```js
 function higherOrderFunction(callback) {
@@ -508,7 +545,7 @@ Here, `higherOrderFunction` takes sayHello as an argument and executes it.
 
 In JavaScript, you can define methods (functions inside objects) using shorthand syntax.
 
-Example:
+#### Example:
 
 ```js
 const myObject = {
@@ -526,7 +563,7 @@ myObject.myMethod(); // Calls the method
 
 The `this` keyword refers to the object that is currently executing the code. Its value depends on how and where it is used.
 
-Example:
+#### Example:
 
 ```js
 const person = {
@@ -541,7 +578,7 @@ person.greet(); // Logs: "Hello, my name is Alice"
 
 In this example, `this.name` refers to the `name` property of the `person` object.
 
-## Conclusion
+## Conclusion for Scope and Key Concepts
 
 - **Scope** determines where variables are accessible.
   - **Function Scope**: Variables are accessible only within the function where they are defined.
@@ -677,7 +714,7 @@ introduce(person);
 - It makes your code cleaner and easier to read.
 - It reduces the need for repetitive code when accessing array or object properties.
 
-## Conclusion
+## Conclusion for Default Parameters, Spread Operator, Rest Parameters & Destructuring
 
 - **Default Parameters**: Provide default values for function parameters to make your code cleaner.
 - **Spread Operator**: Simplifies copying, merging, and expanding arrays or objects.
@@ -696,7 +733,7 @@ The **DOM (Document Object Model)** is a way for JavaScript to interact with and
 
 This project creates a list of 151 Pokémon sprites (images) and displays them on the webpage. Each Pokémon is shown with its image and corresponding number (e.g., #1 for Bulbasaur). The sprites are styled to look neat and organized.
 
-## How It Works
+## How Does This Project Work
 
 ### 1. Selecting the Container
 
@@ -801,7 +838,7 @@ pokemon.style.border = "solid black 1px";
 
 This adds a black border to each Pokémon container.
 
-## Conclusion
+## Conclusion for Creating List of Pokemon Sprites (DOM)
 
 - **Dynamic Content**: The Pokémon list is generated dynamically, meaning we don't need to manually write HTML for each Pokémon.
 - **Reusable Code**: The same logic can be applied to display other types of data, such as product lists or user profiles.
