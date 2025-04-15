@@ -12,3 +12,21 @@
 //     console.log("Promise rejected with: ", err.message);
 //   });
 
+// The use of Async Keyword
+const login = async (username, password) => {
+  if (!username || !password) {
+    throw new Error("Please provide username and password");
+  }
+  if (password === "luis") {
+    return "Welcome back, Luis!";
+  }
+};
+
+login("lucho", "luis")
+  .then((msg) => {
+    console.log("Login successful!");
+    console.log(msg);
+  })
+  .catch((err) => {
+    console.log("Login failed: ", err.message);
+  });
