@@ -22,9 +22,37 @@
 //   });
 
 // const delayColor = (newColor, delay, doNext) => {
-//     setTimeout(() => {
-//         document.body.style.backgroundColor = newColor;
-//         doNext && doNext();
-//     }, delay);
+//   setTimeout(() => {
+//     document.body.style.backgroundColor = newColor;
+//     doNext && doNext();
+//   }, delay);
 // };
 
+// delayColor("red", 1000, () => {
+//   delayColor("orange", 1000, () => {
+//     delayColor("yellow", 1000, () => {
+//       delayColor("green", 1000, () => {
+//         delayColor("blue", 1000, () => {
+//           delayColor("purple", 1000);
+//         });
+//       });
+//     });
+//   });
+// });
+
+// Using promises to make the code cleaner
+const delayColorPromise = (newColor, delay) => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      document.body.style.backgroundColor = newColor;
+      resolve();
+    }, delay);
+  });
+};
+
+delayColorPromise("red", 1000)
+    .then(() => delayColorPromise("orange", 1000))
+    .then(()=> delayColorPromise("yellow", 1000))
+    .then(() => delayColorPromise("green", 1000))
+    .then(() => delayColorPromise("blue", 1000))
+    .then(() => delayColorPromise("purple", 1000))
