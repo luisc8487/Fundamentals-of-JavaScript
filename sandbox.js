@@ -1,46 +1,33 @@
-// What is 'this' in JavaScript?
+//What to do?
 
-// 'this' refers to the object that is executing the current function
-// In a method, 'this' refers to the owner object
-// In a function, 'this' refers to the global object (window in browsers, global in Node.js)
+/*
+- Getting the base key on the iteration function
+- use that key to dictate whether the other element that iteration
+  - if element iteration exist create an array with the element in it
+  - if not add an empty array 
+- make sure this is surround within an object
 
-/* what is the benefit of using 'this' in JavaScript?
-'this' allows you to create methods that can be reused across different objects
-It allows you to access properties and methods of the object that is executing the function
-- dynamic functions that can work with different objects
-- more flexible and reusable code
-- etc
+- HASHMap
 
-// What is the difference between 'this' in a method and 'this' in a function?
-// In a method, 'this' refers to the object that owns the method
-// In a function, 'this' refers to the global object (window in browsers, global in Node.js)
-// In strict mode, 'this' in a function is undefined 
-// Example to demonstrate the difference between 'this' in a method and 'this' in a function
+
 */
 
-function outerFunction() {
-  let outerVariable = "I'm in the outer function!";
+function groupBy(array, iteratee) {
+  // your code goes here
+  const hashmap = new Map();
+  // Getting the base key on the iteration function
+  for (el of array) {
+    const key = iteratee(el);
+    console.log(key);
 
-  function innerFunction() {
-    console.log(outerVariable); // Accessible due to lexical scoping
+    if (!hashmap.has(key)) {
+      hashmap.set(key, []);
+    }
+    // Put the element into the appropriate group
+    hashmap.get(key).push(el);
   }
-
-  innerFunction();
-}
-outerFunction();
-
-const person = {
-  name: "Alice",
-  greet() {
-    console.log(`Hello, my name is ${this.name}`);
-  }
-};
-person.greet(); // Call the method, 'this' refers to the person object
-
-// lexical scope is the scope created by the function itself and its nested functions
-// 'This' is not tied to where a function is defined but rather to how it is invoked. 'This' in a function that relies on lexical scope, it won't work as expected because 'this' is not lexically scoped.
-function outerFunction() {
-    console.log(this); // 'this' depends on how outerFunction is called
+  return hashmap;
 }
 
-outerFunction(); // In non-strict mode, 'this' refers to the global object (e.g., 'window' in browsers)
+// debug your code below
+console.log(groupBy([1.1, 2.2, 2.9], Math.floor));
