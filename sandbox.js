@@ -12,22 +12,44 @@
 
 */
 
-function groupBy(array, iteratee) {
-  // your code goes here
-  const hashmap = new Map();
-  // Getting the base key on the iteration function
-  for (el of array) {
-    const key = iteratee(el);
-    console.log(key);
+// The Use of a HashMap
 
-    if (!hashmap.has(key)) {
-      hashmap.set(key, []);
-    }
-    // Put the element into the appropriate group
-    hashmap.get(key).push(el);
-  }
-  return hashmap;
-}
+// function groupBy(array, iteratee) {
+//   // your code goes here
+//   const hashmap = new Map();
+//   // Getting the base key on the iteration function
+//   for (el of array) {
+//     const key = iteratee(el);
+//     console.log(key);
 
-// debug your code below
-console.log(groupBy([1.1, 2.2, 2.9], Math.floor));
+//     if (!hashmap.has(key)) {
+//       hashmap.set(key, []);
+//     }
+//     // Put the element into the appropriate group
+//     hashmap.get(key).push(el);
+//   }
+//   return hashmap;
+// }
+
+// // debug your code below
+// console.log(groupBy([1.1, 2.2, 2.9], Math.floor));
+
+// The Use of a Regular Object
+
+// function groupBy(array, iteratee) {
+//   // your code goes here
+//   const obj = {};
+
+//   for (let el of array) {
+//     const key = iteratee(el);
+
+//     if (!obj[key]) {
+//       obj[key] = [];
+//     }
+//     obj[key].push(el);
+//   }
+//   return obj;
+// }
+
+// // debug your code below
+// console.log(groupBy([1.1, 2.2, 2.9], Math.floor));
