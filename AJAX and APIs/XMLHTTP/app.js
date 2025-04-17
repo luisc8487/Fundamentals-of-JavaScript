@@ -1,15 +1,19 @@
 // https://swap.dev/api/people/1/
 const req = new XMLHttpRequest();
 
-req.load = function () {
+req.onload = function () {
   console.log("It loaded");
-  console.log(this);
+  const data = JSON.parse(this.responseText);
+  console.log(data);
+  console.log(
+    `Name: ${data.name}, Height: ${data.height}, Weight: ${data.weight}`
+  );
 };
 
-req.error = function () {
+req.onerror = function () {
   console.log("Error loading data");
   console.log(this);
 };
 
-req.open("GET", "https://swap.dev/api/people/1/");
+req.open("GET", "https://pokeapi.co/api/v2/pokemon/1");
 req.send();
