@@ -928,7 +928,7 @@ const getDadJoke = async () => {
 
 ## How to Run the Project
 
-1. Open the index.html file in your browser.
+1. Open the `index.html` file in your browser.
 2. Click the "Get Joke" button to fetch a random dad joke.
 3. Check the console for Pokémon data or error messages.
 
