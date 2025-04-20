@@ -8,6 +8,7 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
   const name = input.value.toLowerCase();
   fetchPokemon(name);
+  input.value = ""; // Clear the input field after submission
 });
 
 const fetchPokemon = async (name) => {
@@ -15,7 +16,23 @@ const fetchPokemon = async (name) => {
   try {
     const res = await fetch(url);
     const data = await res.json();
-    console.log(data);
+    const pokemon = {
+      name: data.name,
+      id: data.id,
+      height: data.height,
+      weight: data.weight,
+      types: data.types.map((type) => type.type.name).join(", "),
+    };
+    console.log(pokemon);
+    const li = document.createElement("li");
+    li.innerHTML = `
+      <h2>${pokemon.name}</h2>
+      <p>ID: ${pokemon.id}</p>
+      <p>Height: ${pokemon.height}</p>
+      <p>Weight: ${pokemon.weight}</p>
+      <p>Types: ${pokemon.types}</p>
+    `;
+    document.querySelector("#pokemonList").appendChild(li);
   } catch (error) {
     console.error("Error fetching Pokemon:", error);
   }
