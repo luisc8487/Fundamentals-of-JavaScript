@@ -1,5 +1,11 @@
 //https://pokeapi.co/api/v2/pokemon/${name}
 
+// This code fetches Pokemon data from the PokeAPI and displays it on a webpage.
+// It uses the Fetch API to make a GET request to the PokeAPI, retrieves the data, and then displays it in a list format.
+// The user can input a Pokemon name, and upon submission, the data for that Pokemon will be fetched and displayed.
+// The code also handles errors in case the Pokemon is not found or if there are issues with the API request.
+// The code is structured to be modular and easy to read, with clear separation of concerns for fetching data and updating the DOM.
+
 const form = document.querySelector("form");
 const input = document.querySelector("#pokemonName");
 const btn = document.querySelector("button");
