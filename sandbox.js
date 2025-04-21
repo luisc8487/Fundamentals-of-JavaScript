@@ -1,5 +1,8 @@
 //https://pokeapi.co/api/v2/pokemon/${name}
 
+// API == Application Programming Interface
+//API => a way to access data or functionality from a remote server or service
+
 // This code fetches Pokemon data from the PokeAPI and displays it on a webpage.
 // It uses the Fetch API to make a GET request to the PokeAPI, retrieves the data, and then displays it in a list format.
 // The user can input a Pokemon name, and upon submission, the data for that Pokemon will be fetched and displayed.
@@ -19,9 +22,9 @@ form.addEventListener("submit", (e) => {
 
 const fetchPokemon = async (name) => {
   const url = `https://pokeapi.co/api/v2/pokemon/${name}`;
-  try {
-    const res = await fetch(url);
-    const data = await res.json();
+  try { // Try to fetch the Pokemon data from the API
+    const res = await fetch(url); // Fetch the data from the API
+    const data = await res.json(); // Parse the response as JSON
     console.log(data);
     const pokemon = {
       name: data.name,
@@ -33,8 +36,9 @@ const fetchPokemon = async (name) => {
         front_default: data.sprites.front_default,
         back_default: data.sprites.back_default,
       },
-    };
+    }; // Create a Pokemon object with relevant data
     console.log(pokemon);
+    // Create a list item to display the Pokemon data
     const li = document.createElement("li");
     li.innerHTML = `
       <h2>${pokemon.name}</h2>
@@ -45,7 +49,7 @@ const fetchPokemon = async (name) => {
       <img src="${pokemon.sprites.front_default}" alt="${pokemon.name} front" />
     `;
     document.querySelector("#pokemonList").appendChild(li);
-  } catch (error) {
+  } catch (error) { // Handle errors if the fetch fails or if the Pokemon is not found
     console.error("Error fetching Pokemon:", error);
   }
 };
