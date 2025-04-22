@@ -119,9 +119,13 @@ class Color {
     const {h, s, l} = this;
     return `hsl(${h}, ${s}%, ${l}%)`;
   }
+  fullSaturation() {
+    const {h, l} = this;
+    return `hsl(${h}, 100%, ${l}%)`;
+  }
   opposite() {
     const newHue = (h + 180) % 360;
-    return `${(h + 180) % 360}, ${s}%, ${l}%`;
+    return `${newHue}, ${s}%, ${l}%`;
   }
   calcHSL() {
     let {r, g, b} = this;
