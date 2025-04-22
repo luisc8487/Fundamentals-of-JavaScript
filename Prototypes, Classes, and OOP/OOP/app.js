@@ -11,6 +11,10 @@ function rgb(r, g, b) {
 hex(255, 100, 25); // "#FF6419"
 rgb(255, 100, 25); // "rgb(255, 100, 25)"
 
+// Factory Function
+// A function that returns an object
+// It is a way to create objects without using the `new` keyword
+
 function makeColor() {
   const color = {};
   color.r = r;
