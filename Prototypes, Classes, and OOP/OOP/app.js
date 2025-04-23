@@ -90,81 +90,121 @@
 // Classes Syntax
 //////////////////
 
-class Color {
-  constructor(r, g, b, name) {
-    this.r = r;
-    this.g = g;
-    this.b = b;
+// class Color {
+//   constructor(r, g, b, name) {
+//     this.r = r;
+//     this.g = g;
+//     this.b = b;
+//     this.name = name;
+//     this.calcHSL();
+//   }
+//   innerRGB() {
+//     const {r, g, b} = this;
+//     return `${r}, ${g}, ${b}`;
+//   }
+//   rgb() {
+//     return `rgb(${this.innerRGB()})`;
+//   }
+//   rgba(a = 1.0) {
+//     return `rgba(${this.innerRGB()}, ${a})`;
+//   }
+//   hex() {
+//     const {r, g, b} = this;
+//     return (
+//       "#" +
+//       ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1).toUpperCase()
+//     );
+//   }
+//   hsl() {
+//     const {h, s, l} = this;
+//     return `hsl(${h}, ${s}%, ${l}%)`;
+//   }
+//   fullSaturation() {
+//     const {h, l} = this;
+//     return `hsl(${h}, 100%, ${l}%)`;
+//   }
+//   opposite() {
+//     const newHue = (h + 180) % 360;
+//     return `${newHue}, ${s}%, ${l}%`;
+//   }
+//   calcHSL() {
+//     let {r, g, b} = this;
+//     // Normalize r, g, b to [0, 1] range
+//     r /= 255;
+//     g /= 255;
+//     b /= 255;
+
+//     // Find greatest and smallest values
+//     let cmin = Math.min(r, g, b),
+//       cmax = Math.max(r, g, b),
+//       delta = cmax - cmin,
+//       h = 0,
+//       s = 0,
+//       l = 0;
+//     if (delta === 0) h = 0;
+//     // Red is max
+//     else if (cmax === r) h = ((g - b) / delta) % 6;
+//     // Green is max
+//     else if (cmax === g) h = (b - r) / delta + 2;
+//     // Blue is max
+//     else h = (r - g) / delta + 4;
+//     h = Math.round(h * 60);
+//     // Make negative hues positive behind 360°
+//     if (h < 0) h += 360;
+
+//     // Lightness
+//     l = (cmax + cmin) / 2;
+
+//     // Saturation
+//     s = delta === 0 ? 0 : delta / (1 - Math.abs(2 * l - 1));
+
+//     // Convert to percentage
+//     s = +(s * 100).toFixed(1);
+//     l = +(l * 100).toFixed(1);
+//     this.h = h;
+//     this.s = s;
+//     this.l = l;
+//   }
+// }
+
+// const c1 = new Color(255, 67, 89, "tomato");
+
+///////////////////
+// Extends
+///////////////////
+
+class Pet {
+  constructor(name, age) {
     this.name = name;
-    this.calcHSL();
+    this.age = age;
   }
-  innerRGB() {
-    const {r, g, b} = this;
-    return `${r}, ${g}, ${b}`;
+  eat() {
+    return `${this.name} is eating`;
   }
-  rgb() {
-    return `rgb(${this.innerRGB()})`;
-  }
-  rgba(a = 1.0) {
-    return `rgba(${this.innerRGB()}, ${a})`;
-  }
-  hex() {
-    const {r, g, b} = this;
-    return (
-      "#" +
-      ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1).toUpperCase()
-    );
-  }
-  hsl() {
-    const {h, s, l} = this;
-    return `hsl(${h}, ${s}%, ${l}%)`;
-  }
-  fullSaturation() {
-    const {h, l} = this;
-    return `hsl(${h}, 100%, ${l}%)`;
-  }
-  opposite() {
-    const newHue = (h + 180) % 360;
-    return `${newHue}, ${s}%, ${l}%`;
-  }
-  calcHSL() {
-    let {r, g, b} = this;
-    // Normalize r, g, b to [0, 1] range
-    r /= 255;
-    g /= 255;
-    b /= 255;
-
-    // Find greatest and smallest values
-    let cmin = Math.min(r, g, b),
-      cmax = Math.max(r, g, b),
-      delta = cmax - cmin,
-      h = 0,
-      s = 0,
-      l = 0;
-    if (delta === 0) h = 0;
-    // Red is max
-    else if (cmax === r) h = ((g - b) / delta) % 6;
-    // Green is max
-    else if (cmax === g) h = (b - r) / delta + 2;
-    // Blue is max
-    else h = (r - g) / delta + 4;
-    h = Math.round(h * 60);
-    // Make negative hues positive behind 360°
-    if (h < 0) h += 360;
-
-    // Lightness
-    l = (cmax + cmin) / 2;
-
-    // Saturation
-    s = delta === 0 ? 0 : delta / (1 - Math.abs(2 * l - 1));
-
-    // Convert to percentage
-    s = +(s * 100).toFixed(1);
-    l = +(l * 100).toFixed(1);
-    this.h = h;
-    this.s = s;
-    this.l = l;
+  sleep() {
+    return `${this.name} is sleeping`;
   }
 }
 
-const c1 = new Color(255, 67, 89, "tomato");
+class Dog extends Pet {
+  constructor(name, age) {
+    console.log("Dog constructor called");
+    this.name = name; // Call the constructor of the parent class (Pet)
+    this.age = age; // Add a new property specific to Dog
+  }
+  bark() {
+    return `${this.name} is barking`;
+  }
+}
+
+class Cat extends Pet {
+  constructor(name, age, livesLeft = 9) {
+    console.log("Cat constructor called");
+    // Call the constructor of the parent class (Pet)
+    super(name, age); // Call the constructor of the parent class (Pet)
+    this.livesLeft = livesLeft; // Add a new property specific to Cat
+  }
+  meow() {
+    return `${this.name} is meowing`;
+  }
+}
