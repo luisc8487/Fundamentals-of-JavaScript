@@ -2,6 +2,8 @@
 // Extends
 ///////////////////
 
+// The extends keyword is used in class declarations or class expressions to create a child class from a parent class. The child class inherits all the properties and methods of the parent class, allowing for code reuse and the creation of more specific classes based on a general class.
+
 class Pet {
   constructor(name, age) {
     this.name = name;

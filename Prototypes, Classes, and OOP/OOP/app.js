@@ -90,6 +90,9 @@
 // Classes Syntax
 //////////////////
 
+// The class syntax is a more modern way to create constructor functions and prototypes in JavaScript. It is a syntactical sugar over the existing prototype-based inheritance and constructor functions.
+// It is a way to create objects using the `class` keyword
+
 // class Color {
 //   constructor(r, g, b, name) {
 //     this.r = r;
@@ -172,6 +175,9 @@
 ///////////////////
 // Extends
 ///////////////////
+
+// The extends keyword is used in class declarations or class expressions to create a child class from a parent class. The child class inherits all the properties and methods of the parent class, allowing for code reuse and the creation of more specific classes based on a general class.
+// super is a special keyword that refers to the parent class. It is used to call the constructor of the parent class and to access methods and properties of the parent class from the child class.
 
 class Pet {
   constructor(name, age) {
