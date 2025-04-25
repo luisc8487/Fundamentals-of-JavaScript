@@ -1076,4 +1076,52 @@ console.log(c1.hex()); // Output: "#FF4359"
 ```
 
 ### Why Use Class Syntax?
+
 - It is easier to read and write compared to constructor functions.
+- It provides a more structured way to define objects and methods.
+
+## 5. Extends and Super
+
+The `extends` keyword is used to create a child class that inherits properties and methods from a parent class. The `super` keyword is used to call the parent class's constructor or methods.
+
+#### Example:
+
+```js
+class Pet {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  eat() {
+    return `${this.name} is eating`;
+  }
+}
+
+class Dog extends Pet {
+  constructor(name, age) {
+    super(name, age); // Call the parent class's constructor
+  }
+
+  bark() {
+    return `${this.name} is barking`;
+  }
+}
+
+const myDog = new Dog("Buddy", 3);
+console.log(myDog.eat()); // Output: "Buddy is eating"
+console.log(myDog.bark()); // Output: "Buddy is barking"
+```
+
+### Why Use Extends and Super?
+
+- `Extends` allows us to reuse code by inheriting properties and methods from a parent class.
+- `Super` ensures that the parent class's constructor and methods are properly called.
+
+## Conclusion for Prototypes, Classes and OOP
+
+- `Factory Functions`: Create objects without using the `new` keyword.
+- `Constructor Functions`: Use the `new` keyword to create objects and link them to a prototype.
+- `Prototypes`: Share methods across all instances of a constructor function.
+- `Class Syntax`: A modern, cleaner way to create objects and implement inheritance.
+- `Extends and Super`: Enable inheritance and allow child classes to reuse code from parent classes.
