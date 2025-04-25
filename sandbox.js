@@ -2,9 +2,13 @@
 // Extends
 ///////////////////
 
-// The extends keyword is used in class declarations or class expressions to create a child class from a parent class. The child class inherits all the properties and methods of the parent class, allowing for code reuse and the creation of more specific classes based on a general class.
+// Extends | allows us to reuse code by inheriting properties and methods from a parent class.
+// Super |  ensures that the parent class's constructor and methods are properly called.
+// Class | syntax is a modern, cleaner way to create objects and implement inheritance.
 
 class Pet {
+  // The constructor method is a special method for creating and initializing an object created with a class.
+  // It is called automatically when a new instance of the class is created.
   constructor(name, age) {
     this.name = name;
     this.age = age;
@@ -19,15 +23,15 @@ class Pet {
 
 class Dog extends Pet {
   constructor(name, age) {
+    super(name, age); // Call the constructor of the parent class (Pet)
     console.log("Dog constructor called");
-    this.name = name; // Call the constructor of the parent class (Pet)
-    this.age = age; // Add a new property specific to Dog
   }
   bark() {
     return `${this.name} is barking`;
   }
 }
 
+// the class cat extends the class pet
 class Cat extends Pet {
   constructor(name, age, livesLeft = 9) {
     console.log("Cat constructor called");
